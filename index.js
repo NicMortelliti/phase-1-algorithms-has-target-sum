@@ -1,5 +1,16 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  let result = false;
+
+  array.forEach(element => {
+    intToFind = target - element;
+    
+    if (array.includes(intToFind) && intToFind != element){
+      result = true;
+    }
+  });
+
+  return result;
 }
 
 /* 
